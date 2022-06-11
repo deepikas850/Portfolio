@@ -1,0 +1,120 @@
+.CommentsCard {
+  margin: 0;
+  padding: 0;
+  // border: 2px solid red;
+  .Card {
+    padding: 15px 35px;
+    min-height: 270px;
+    // height: 100%;
+    // width: 450px;
+    width: 90%;
+    box-shadow: 4px 4px 15px -8px white;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 50px 50px 50px 0px;
+    margin: 0 20px;
+    // border: 3px solid sandybrown;
+
+    .Top {
+      height: 40%;
+      text-align: justify;
+      font-family: "Poppins Regular";
+      color: #24263b;
+      font-style: italic;
+      .descriptionC {
+        margin: 0 !important;
+      }
+      @media only screen and (max-width: 480px) {
+        .descriptionC {
+          font-size: 14px;
+        }
+      }
+      .fa {
+        font-size: 15px;
+        color: var(--orange);
+        &.fa-quote-left {
+          margin-right: 5px;
+        }
+        &.fa-quote-right {
+          margin-left: 5px;
+        }
+      }
+    }
+    .Bottom {
+      height: 60%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-start;
+      .User {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 1px solid var(--main-color);
+
+        &:hover {
+          transform: scale(1.07);
+          transition: 1s ease-out;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .User {
+          height: 85px;
+          width: 85px;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .User {
+          height: 80px;
+          width: 80px;
+        }
+      }
+      .Tittle {
+        margin-left: 7px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        .linkk{
+          text-decoration: none;
+        }
+        .a {
+          font-family: "Poppins SemiBold";
+          color: #24263b;
+        }
+        .b {
+          font-family: "Poppins Light";
+          font-style: italic;
+        }
+        @media only screen and (max-width: 600px) {
+          .a {
+            font-size: 24px;
+          }
+          .b {
+            font-size: 20px;
+          }
+        }
+        @media only screen and (max-width: 480px) {
+          .a {
+            font-size: 18px;
+          }
+          .b {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+      transition: 1s ease-out;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .Card {
+      border-radius: 20px 20px 20px 0px;
+      padding: 0px 20px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.DSkills {
+  // height: 100%;
+  height: 480px;
+  // border: 2px solid red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 20px;
+  .DProgress {
+    flex: 0.8;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .DLeft {
+      flex: 0.5;
+      height: 100%;
+      width: 100%;
+    }
+    .DRight {
+      flex: 0.5;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .DConclusion {
+    flex: 0.2;
+    height: 100%;
+    font-size: 18px;
+    text-align: justify;
+    padding: 5px;
+    font-family: "Poppins Regular";
+    color: var(--main-color);
+  }
+  @media screen and (max-width: 500px) {
+    .DConclusion {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 370px) {
+    .DConclusion {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 150px;
+  /* position: relative; */
+  /* margin-top:100px; */
+  /* border: 1px solid red; */
+  background-image: url(../../assets/Home/bg.jpg);
+  box-sizing: border-box;
+}

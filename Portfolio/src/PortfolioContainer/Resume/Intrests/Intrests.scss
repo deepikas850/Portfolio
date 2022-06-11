@@ -1,0 +1,77 @@
+.IntrestContainer {
+  // height: 100%;
+  height: 480px;
+  width: 100%;
+  padding: 20px 20px;
+  dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    // border: 1px solid red;
+    padding: 15px;
+    .IHobby {
+      .ITitle {
+        font-family: "Poppins SemiBold";
+        font-size: 20px;
+        color: var(--dark-orange);
+        padding-left: 20px;
+        //   top: -15px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: -9px;
+          top: 5px;
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          border: 2px solid var(--dark-orange);
+          background-color: var(--dark-orange);
+        }
+      }
+      .IDesc {
+        color: var(--main-color);
+        padding: 8px 20px;
+        font-family: "Poppins Regular";
+        font-size: 18px;
+      }
+      @media screen and (max-width: 650px) {
+        .IDesc {
+          font-size: 16px;
+          margin-bottom: 0;
+        }
+        .IHobby {
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 435px) {
+        .IDesc{
+          padding: 4px 10px;
+        }
+      }
+      @media screen and (max-width: 370px) {
+        .IDesc {
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+        .IHobby {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    dl {
+      margin-bottom: 0;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .IntrestContainer {
+    padding: 5px;
+    dl {
+      padding: 10px;
+    }
+  }
+}

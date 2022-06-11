@@ -1,0 +1,90 @@
+.Navbar {
+  width: 100%;
+  height: 100px;
+  background-color: #24263b;
+  color: aliceblue;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
+
+  .Wrapper {
+    padding: 20px 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .Left {
+      display: flex;
+      align-items: center;
+
+      .Logo {
+        font-size: 40px;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+        margin-right: 40px;
+      }
+
+      .ItemContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+
+        .fa {
+          font-size: 18px;
+          margin-right: 7px;
+        }
+
+        span {
+          font-size: 15px;
+          font-family: "Poppins SemiBold";
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .ItemContainer{
+          display: none;
+        }
+      }
+    }
+    .Right {
+      .Hamburger {
+        width: 32px;
+        height: 25px;
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+
+        span {
+          width: 100%;
+          height: 3px;
+          background-color: white;
+          transform-origin: left;
+          transition: all 2s ease;
+        }
+      }
+    }
+  }
+  &.active {
+    background-color: white;
+    color: #24263b;
+    .Hamburger {
+      span {
+        transition: all 2s ease;
+        &:first-child {
+          background-color: #24263b;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: #24263b;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

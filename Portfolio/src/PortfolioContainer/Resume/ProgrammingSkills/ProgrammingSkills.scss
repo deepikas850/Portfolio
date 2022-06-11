@@ -1,0 +1,71 @@
+.PSkills {
+  // height: 100%;
+  height: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 20px;
+  .PContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: hidden;
+    .PLanguage {
+      background-color: #24263b;
+      color: var(--orange);
+      min-width: 20%;
+      margin-right: 40px;
+      // height: 15%;
+      font-size: 70px;
+      // height: 100%;
+      text-align: center;
+      padding: 5px;
+    }
+    @media screen and (max-width: 870px) {
+      .PLanguage{
+        font-size: 60px;
+      }
+    }
+    .PDetail {
+      color: #24263b;
+      width: 80%;
+      height: 100%;
+      font-size: 18px;
+      font-family: "Poppins Regular";
+      // padding-left: 40px;
+      text-align: justify;
+      display: flex;
+      align-items: center;
+    }
+    @media screen and (max-width: 700px) {
+      .PLanguage{
+        min-width: 20%;
+      }
+      .PDetail{
+        width: 80%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .PLanguage{
+        font-size: 50px;
+      }
+      .PDetail{
+        font-size: 16px;
+        text-align: unset;
+      }
+    }
+    @media screen and (max-width: 460px) {
+      .PLanguage{
+        font-size: 35px;
+        margin-right: 20px;
+      }
+      .PDetail{
+        font-size: 14px;
+      }
+    }
+  }
+  
+}

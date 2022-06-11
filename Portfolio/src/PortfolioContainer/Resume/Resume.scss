@@ -1,0 +1,212 @@
+.Resume {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // border: 2px solid red;
+
+  h1 {
+    margin-top: 10px;
+    color: #24263b;
+    margin-bottom: 10px;
+    font-family: "Poppins SemiBold";
+  }
+  .BioDetails {
+    color: #24263b;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-family: "Poppins Regular";
+  }
+  .ResumeContainer {
+    // border: 2px solid blue;
+    min-height: 480px;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // border: 5px solid blue;
+    .ResumeSubContainer {
+      width: 35%;
+      display: flex;
+      align-items: flex-start;
+      height: 100%;
+      // border: 10px solid red;
+      .ResumeIcons {
+        width: 15%;
+        background-color: #24263b;
+        // height:100%;
+        min-height: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 40px 0;
+        // z-index: 200;
+        // border: 15px solid violet;
+
+        i {
+          color: var(--white);
+          font-size: 30px;
+          margin: auto;
+          margin-top: 57%;
+          // border: 1px solid white;
+        }
+      }
+      .ResumeList {
+        width: 85%;
+        background-color: var(--white);
+        // height: 100%;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 40px 0;
+        // border: 20px solid cadetblue;
+        box-shadow: 15px 0 15px -15px rgb(0, 0, 0);
+        z-index: 2;
+        button {
+          font-family: "Poppins SemiBold";
+          font-size: 20px;
+          text-align: left;
+          background: none;
+          padding: 0;
+          margin-top: 24px;
+          border: none;
+          color: #24263b;
+          width: 90%;
+          display: flex;
+          align-items: center;
+          outline: none;
+          // border: 1px solid red;
+          // position: relative;
+          .far,
+          .fas {
+            position: relative;
+            left: -13%;
+            // top: 12px;
+            color: white;
+            font-size: 25px;
+          }
+          @media screen and (max-width: 1300px) {
+            .far,
+            .fas {
+              left: -15%;
+            }
+          }
+          @media screen and (max-width: 1050px) {
+            .far,
+            .fas {
+              left: -11.5%;
+            }
+          }
+          @media screen and (max-width: 450px) {
+            .far,
+            .fas {
+              left: -14%;
+              font-size: 20px;
+            }
+          }
+          div {
+            padding: 10px;
+            width: 20%;
+            outline: none;
+            // border:5px solid rgb(0, 255, 221);
+            position: absolute;
+            height: 5%;
+          }
+          &:hover div {
+            background-color: #24263b;
+            color: var(--white);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            outline: none;
+            height: 8%;
+            animation: 0.5s 1 linear slide forwards;
+          }
+          &:hover p {
+            color: var(--white);
+            top: 3.5px;
+            outline: none;
+          }
+          .resumebackground{
+            background-color: #24263b;
+            color: var(--white);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            outline: none;
+            height: 8%;
+          }
+          .pbackground{
+            color: var(--white);
+            top: 3.5px;
+            outline: none;
+          }
+          p {
+            position: relative;
+            top: -2px;
+            text-decoration: none;
+            color: #24263b;
+            padding: 10px;
+            outline: none;
+            margin: 0 !important;
+            margin-left: -20px !important;
+          }
+          @keyframes slide {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 20%;
+            }
+          }
+
+          @media screen and (max-width: 1050px) {
+            div {
+              width: 60%;
+            }
+            &:hover div {
+              animation: 0.5s 1 linear slide2 forwards;
+            }
+          }
+          @keyframes slide2 {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+    .ResumeDetails {
+      width: 65%;
+      background-color: var(--white);
+      // height: 100%;
+      height: 480px;
+      overflow: auto;
+      // border: 1px solid black;
+    }
+    @media screen and (max-width: 1050px) {
+      .ResumeDetails {
+        width: 100%;
+        height: 480px;
+      }
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .ResumeContainer {
+      flex-direction: column;
+
+      .ResumeSubContainer {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 1250px) {
+    .ResumeContainer {
+      width: 75%;
+    }
+  }
+}

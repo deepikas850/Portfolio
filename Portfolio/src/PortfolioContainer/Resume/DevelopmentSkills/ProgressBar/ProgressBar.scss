@@ -1,0 +1,42 @@
+.PHeading {
+  font-family: "Poppins SemiBold";
+  font-size: 18px;
+  padding-left: 10px;
+  color: var(--main-color);
+}
+.Parentdiv {
+  height: 20px;
+  width: 90%;
+  background-color: var(--main-color);
+  border-radius: 40px;
+  margin: 10px;
+}
+.Childdiv {
+  height: 100%;
+  background-color: var(--orange);
+  border-radius: 40px;
+  text-align: right;
+}
+.progresstext {
+  padding: 10px;
+  color: var(--main-color);
+  font-weight: 900;
+}
+@media screen and (max-width: 600px) {
+  .Parentdiv {
+    height: 10px;
+  }
+  .progresstext {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .PHeading {
+    margin: 0;
+    font-size: 16px;
+  }
+  .Parentdiv {
+    margin: 7px;
+  }
+}
